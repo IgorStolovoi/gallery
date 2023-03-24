@@ -9,8 +9,11 @@ const ImageModal = forwardRef(({ src, setIsModalOpen }, ref) => {
     })
     return (
         <div ref={ref} className={styles.imageModal__wrapper} style={{ top: `${stickyModal}px` }} >
-            <img src={src} alt="modal" />
-            <div className={styles.imageModal__closeIcon} onClick={() => { setIsModalOpen(false) }}><AiOutlineCloseCircle style={{ color: "white", fontSize: "1.5em" }} /></div>
+            <div className={styles.imageModal__box}>
+                <img src={src} alt="modal" />
+                <div className={styles.imageModal__closeIcon} onClick={() => { setIsModalOpen(false) }}><AiOutlineCloseCircle style={{ color: "white", fontSize: "1.5em" }} /></div>
+
+            </div>
         </div>
     );
 })
