@@ -1,0 +1,12 @@
+.favorite__list {
+  background-color: rgba(30, 34, 84, 0.8);
+  width: 100%;
+  height: 100%;
+}
+.favorites__heading {
+  text-align: center;
+  font-size: 30px;
+}
+.favorites__actions {
+  margin: 20px auto;
+}

@@ -1,0 +1,43 @@
+.imageItem {
+  max-width: calc(33.3% - 20px);
+  width: 100%;
+  height: 300px;
+  margin: 10px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+  position: relative;
+}
+
+.imageItem img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.imageItem:hover {
+  transform: scale(1.05);
+}
+.imageItem:hover .imageItem__favorite {
+  transform: translateY(-20px);
+}
+.imageItem__favorite {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  transform: translateY(100px);
+  width: 20px;
+  height: 20px;
+  right: 10px;
+  bottom: 0;
+  transition: all 0.2s;
+}
+.imageItem__favorite svg {
+  width: 20px;
+  height: 20px;
+  stroke: red;
+}
+.imageItem__favorite_checked {
+  composes: imageItem__favorite;
+}

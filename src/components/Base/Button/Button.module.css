@@ -1,0 +1,19 @@
+.button {
+  background-color: rgba(35, 49, 223, 0.8);
+  box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin: 2px;
+  opacity: 1;
+  transition: all 0.5s;
+}
+.button:hover {
+  box-shadow: 1px -1px 10px 1px rgba(0, 0, 0, 0.75);
+}
+.button_loading {
+  composes: button;
+  opacity: 0.7;
+}
